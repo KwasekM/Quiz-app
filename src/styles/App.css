@@ -1,0 +1,100 @@
+#root {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.btn {
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  background-color: #4d5b9e;
+  padding: 10px 12px;
+  color: #f5f7fb;
+  font-size: 12px;
+}
+.start-game {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+.start-game__title {
+  align-self: center;
+  margin-bottom: 13px;
+  font-family: "karla", sans-serif;
+}
+.start-game__description {
+  font-family: "inter", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.start-game__btn {
+  width: 45%;
+  align-self: center;
+}
+.container {
+  padding: 5px 20px;
+}
+.question-elements {
+  margin-bottom: 8px;
+}
+.question-elements__question {
+  margin-bottom: 16px;
+  font-family: "inter", sans-serif;
+}
+.question-elements__answers {
+  margin-bottom: 12px;
+  display: flex;
+}
+.question-elements__answer {
+  font-family: "karla", sans-serif;
+  margin-right: 15px;
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid #4d5b9e;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.buttons__result {
+  align-self: center;
+  font-family: "inter", sans-serif;
+}
+.buttons__check {
+  display: block;
+  margin: 0 auto;
+}
+.buttons__btn-again {
+  margin: 0 0 0 20px;
+}
+@media (max-width: 576px) {
+  .question-elements__answers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .question-elements__answer {
+    flex-basis: 46%;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 360px) {
+  .question-elements__answers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .question-elements__answer {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+}
